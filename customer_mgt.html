@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Restaurant Management System</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu Management</a></li>
+      <li><a href="order.html"><i class="fas fa-clipboard-list"></i> Order Processing</a></li>
+      <li><a href="billing.html"><i class="fas fa-file-invoice-dollar"></i> Billing</a></li>
+      <li><a href="customer.html"><i class="fas fa-users"></i> Customer Management</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="customerManagement">
+      <h2>Customer Management</h2>
+
+      <!-- Add new customer form -->
+      <h3>Add New Customer</h3>
+      <form id="addCustomerForm">
+        <div>
+          <label for="customerName">Name:</label>
+          <input type="text" id="customerName" required>
+        </div>
+        <div>
+          <label for="customerContact">Contact Information:</label>
+          <input type="text" id="customerContact" required>
+        </div>
+        <div>
+          <label for="customerMembership">Membership Status:</label>
+          <input type="checkbox" id="customerMembership">
+        </div>
+        <button type="submit">Add Customer</button>
+      </form>
+
+      <!-- View customer details -->
+      <h3>Customer Details</h3>
+      <div id="customerDetails">
+        <!-- Display customer details dynamically -->
+      </div>
+
+      <!-- Edit customer records form -->
+      <h3>Edit Customer Records</h3>
+      <form id="editCustomerForm">
+        <div>
+          <label for="editCustomerId">Customer ID:</label>
+          <input type="text" id="editCustomerId" required>
+        </div>
+        <div>
+          <label for="editCustomerName">Name:</label>
+          <input type="text" id="editCustomerName" required>
+        </div>
+        <div>
+          <label for="editCustomerContact">Contact Information:</label>
+          <input type="text" id="editCustomerContact" required>
+        </div>
+        <div>
+          <label for="editCustomerMembership">Membership Status:</label>
+          <input type="checkbox" id="editCustomerMembership">
+        </div>
+        <button type="submit">Update Customer</button>
+      </form>
+
+      <!-- Remove customer records form -->
+      <h3>Remove Customer</h3>
+      <form id="removeCustomerForm">
+        <div>
+          <label for="removeCustomerId">Customer ID:</label>
+          <input type="text" id="removeCustomerId" required>
+        </div>
+        <button type="submit">Remove Customer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023

@@ -1,4 +1,6 @@
 Restaurant Management System:
+-----------------------------
+
 This project is a Restaurant Management System built using the C programming language. It is designed to facilitate the management and operation of a restaurant, including tasks such as menu management, order processing, billing, and customer management.
 
 Features

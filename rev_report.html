@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporting</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Restaurant Management System</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu Management</a></li>
+      <li><a href="order.html"><i class="fas fa-clipboard-list"></i> Order Processing</a></li>
+      <li><a href="billing.html"><i class="fas fa-file-invoice-dollar"></i> Billing</a></li>
+      <li><a href="customer.html"><i class="fas fa-users"></i> Customer Management</a></li>
+      <li><a href="reporting.html"><i class="fas fa-chart-line"></i> Reporting</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="reporting">
+      <h2>Reporting</h2>
+
+      <!-- Daily, weekly, or monthly revenue report -->
+      <h3>Revenue Report</h3>
+      <form id="revenueReportForm">
+        <div>
+          <label for="reportType">Report Type:</label>
+          <select id="reportType" required>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+        <button type="submit">Generate Report</button>
+      </form>
+      <div id="revenueReport">
+        <!-- Display revenue report dynamically -->
+      </div>
+
+      <!-- Popular menu items and customer preferences -->
+      <h3>Popular Menu Items and Customer Preferences</h3>
+      <div id="popularItems">
+        <!-- Display popular menu items and customer preferences dynamically -->
+      </div>
+
+      <!-- Data-driven decision-making -->
+      <h3>Data-Driven Decision Making</h3>
+      <div id="dataDrivenDecisions">
+        <!-- Display data-driven decisions dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Restaurant Management System</p>
+  </footer>
+</body>
+</html>
+

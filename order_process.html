@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Processing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Restaurant Management System</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu Management</a></li>
+      <li><a href="order.html"><i class="fas fa-clipboard-list"></i> Order Processing</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="orderProcessing">
+      <h2>Order Processing</h2>
+
+      <!-- Take customer order form -->
+      <h3>Take Customer Order</h3>
+      <form id="customerOrderForm">
+        <div>
+          <label for="menuItems">Menu Items:</label>
+          <select id="menuItems" multiple required>
+            <!-- Populate with menu items dynamically -->
+          </select>
+        </div>
+        <div>
+          <label for="itemQuantities">Quantities:</label>
+          <input type="number" id="itemQuantities" required>
+        </div>
+        <button type="submit">Place Order</button>
+      </form>
+
+      <!-- Order summary -->
+      <h3>Order Summary</h3>
+      <div id="orderSummary">
+        <!-- Display order details dynamically -->
+      </div>
+
+      <!-- Total cost -->
+      <h3>Total Cost</h3>
+      <div id="totalCost">
+        <!-- Display total cost dynamically -->
+      </div>
+
+      <!-- Generate order tickets -->
+      <h3>Generate Order Tickets</h3>
+      <button id="generateTicketsBtn">Generate Tickets</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Restaurant Management System</p>
+  </footer>
+</body>
+</html>
+

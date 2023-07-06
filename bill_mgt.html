@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Restaurant Management System</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu Management</a></li>
+      <li><a href="order.html"><i class="fas fa-clipboard-list"></i> Order Processing</a></li>
+      <li><a href="billing.html"><i class="fas fa-file-invoice-dollar"></i> Billing</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="billing">
+      <h2>Billing</h2>
+
+      <!-- Generate itemized bill form -->
+      <h3>Generate Itemized Bill</h3>
+      <form id="generateBillForm">
+        <div>
+          <label for="orderId">Order ID:</label>
+          <input type="text" id="orderId" required>
+        </div>
+        <button type="submit">Generate Bill</button>
+      </form>
+
+      <!-- Display itemized bill -->
+      <h3>Itemized Bill</h3>
+      <div id="itemizedBill">
+        <!-- Display itemized bill dynamically -->
+      </div>
+
+      <!-- Calculate total revenue -->
+      <h3>Total Revenue</h3>
+      <form id="calculateRevenueForm">
+        <div>
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" required>
+        </div>
+        <div>
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" required>
+        </div>
+        <button type="submit">Calculate Revenue</button>
+      </form>
+      <div id="totalRevenue">
+        <!-- Display total revenue dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Restaurant Management System</p>
+  </footer>
+</body>
+</html>
+
